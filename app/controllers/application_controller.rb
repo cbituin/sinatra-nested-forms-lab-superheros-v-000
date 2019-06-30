@@ -13,7 +13,16 @@ class App < Sinatra::Base
     end
      
     post '/teams' do
-      @params = params
+      @pirate = Pirate.new(params[:pirate])
+
+      params[:pirate][:ships].each do |details|
+        Ship.new(details)
+      end
+      
+      @ships = Ship.all
+
+      erb :'pirates/show'
+      
       erb :team
     end
     
