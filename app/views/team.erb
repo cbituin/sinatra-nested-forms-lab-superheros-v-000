@@ -7,10 +7,10 @@
 </h2>
 
 
-<% @ships.each do |ship| %>
+<% @heroes.each do |hero| %>
   <div class="heroes">
-    <p>Name: <%= ship.name %></p><br>
-    <p>Type: <%= ship.type %></p><br>
-    <p>Booty: <%= ship.booty %></p>
+    <h2>Name: <%= hero.name %></h2><br>
+    <p>Type: <%= hero.power %></p><br>
+    <p>Booty: <%= hero.bio %></p>
   </div><br>
 <% end %>
