@@ -15,9 +15,9 @@ class App < Sinatra::Base
     post '/teams' do
       @team = Team.new(params[:team])
 
-      # params[:pirate][:ships].each do |details|
-      #   Ship.new(details)
-      # end
+      params[:pirate][:ships].each do |details|
+        Ship.new(details)
+      end
       
       # @ships = Ship.all
       puts params
