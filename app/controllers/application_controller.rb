@@ -19,7 +19,7 @@ class App < Sinatra::Base
         Hero.new(details)
       end
       
-      # @ships = Ship.all
+      @heroes = Hero.all
       puts params
 
       erb :team
