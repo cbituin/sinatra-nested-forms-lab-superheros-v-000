@@ -20,7 +20,7 @@ class App < Sinatra::Base
       # end
       
       # @ships = Ship.all
-      params
+      puts params
 
       erb :team
     end
