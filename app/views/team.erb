@@ -6,15 +6,11 @@
   Team Motto: <%= @team.motto %>
 </h2>
 
-<div>
-  <h2>
-      <%= %>
-  </h2>
-  <p>
-  
-  </p>
-  <p>
-    
-  </p>
 
-</div>
+<% @ships.each do |ship| %>
+  <div class="heroes">
+    <p>Name: <%= ship.name %></p><br>
+    <p>Type: <%= ship.type %></p><br>
+    <p>Booty: <%= ship.booty %></p>
+  </div><br>
+<% end %>
