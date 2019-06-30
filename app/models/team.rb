@@ -16,8 +16,4 @@ class Team
     TEAMS
   end
   
-  def self.clear
-    TEAMS = []
-  end
-  
 end
