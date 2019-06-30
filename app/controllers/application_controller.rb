@@ -20,7 +20,6 @@ class App < Sinatra::Base
       end
       
       @heroes = Hero.all
-      puts params
 
       erb :team
     end
